@@ -1,6 +1,7 @@
 ## 0x1B. C - Sorting algorithms & Big O
 
 Diego Garzon
+
 Orlando Gomez
 
 Holberton
