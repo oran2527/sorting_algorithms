@@ -6,9 +6,15 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *tmp_node = *list, *prev_node;
+	listint_t *tmp_node = *list, *prev_node, temp = *list;
+	int cont;
 
 	if (list == NULL)
+		return;
+	while (temp)
+		cont++;
+
+	if (cont < 2)
 		return;
 
 	while (tmp_node)
