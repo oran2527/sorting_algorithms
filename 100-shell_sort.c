@@ -9,7 +9,7 @@ void shell_sort(int *array, size_t size)
 	size_t interval = 1, i, j;
 	int temp;
 
-	if (size <= 1)
+	if (array == NULL || size <= 1)
 		print_array(array, size);
 
 	while (interval <= size / 3)
