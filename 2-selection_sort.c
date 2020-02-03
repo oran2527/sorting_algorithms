@@ -9,8 +9,8 @@ void selection_sort(int *array, size_t size)
 	int current, low, flag;
 	size_t j, i, index;
 
-	if (size <= 1)
-		print_array(array, size);
+	if (array == NULL || size <= 1)
+		return;
 	if (size > 1)
 	{
 		for (i = 0; i < size - 1; i++)
