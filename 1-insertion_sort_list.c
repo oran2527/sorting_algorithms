@@ -17,7 +17,7 @@ void insertion_sort_list(listint_t **list)
 		temp = temp->next;
 	}
 	if (cont < 2)
-		print_list(*list);
+		return;
 	while (tmp_node)
 	{
 		while (tmp_node->prev && tmp_node->n < tmp_node->prev->n)
