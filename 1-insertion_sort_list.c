@@ -6,17 +6,18 @@
  */
 void insertion_sort_list(listint_t **list)
 {
-	listint_t *tmp_node = *list, *prev_node, temp = *list;
+	listint_t *tmp_node = *list, *prev_node, *temp = *list;
 	int cont;
 
 	if (list == NULL)
 		return;
 	while (temp)
+	{	
 		cont++;
-
+		temp = temp->next;
+	}
 	if (cont < 2)
-		return;
-
+		print_list(*list);
 	while (tmp_node)
 	{
 		while (tmp_node->prev && tmp_node->n < tmp_node->prev->n)
