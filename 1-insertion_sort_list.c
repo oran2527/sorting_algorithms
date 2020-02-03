@@ -8,6 +8,9 @@ void insertion_sort_list(listint_t **list)
 {
 	listint_t *tmp_node = *list, *prev_node;
 
+	if (list == NULL)
+		return;
+
 	while (tmp_node)
 	{
 		while (tmp_node->prev && tmp_node->n < tmp_node->prev->n)
